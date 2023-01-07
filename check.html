@@ -1,0 +1,1339 @@
+<html
+  data-wf-domain="user-dashboard.webflow.io"
+  data-wf-page="5ced68c3e54ddd39672b8140"
+  data-wf-site="5cdb69c9ded4a00da77c2385"
+  class="w-mod-js w-mod-ix wf-varela-n4-active wf-karla-n4-active wf-karla-n7-active wf-active"
+>
+  <head>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .wf-force-outline-none[tabindex='-1']:focus {
+        outline: none;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>preview</title>
+    <meta content="preview" property="og:title" />
+    <meta content="preview" property="twitter:title" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/css/user-dashboard.73e6fb6d4.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela:400%7CKarla:regular,700"
+      media="all"
+    />
+    <script type="text/javascript">
+      WebFont.load({
+        google: { families: ['Varela:400', 'Karla:regular,700'] },
+      });
+    </script>
+    <!--[if lt IE 9
+      ]><script
+        src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+        type="text/javascript"
+      ></script
+    ><![endif]-->
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = ' w-mod-';
+        (n.className += t + 'js'),
+          ('ontouchstart' in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + 'touch');
+      })(window, document);
+    </script>
+    <link
+      href="https://assets.website-files.com/img/favicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://assets.website-files.com/img/webclip.png"
+      rel="apple-touch-icon"
+    />
+    <!--REPLACE ↓↓-->
+
+    <!-- Temporary Memberstack Code -->
+    <script
+      src="https://api.memberstack.io/static/memberstack.js"
+      data-memberstack-id="492fe7dc98e13f13d8933202d4c9b994"
+    ></script>
+    <style type="text/css" data-ms-style="">
+      [ms-hide='client-area'],
+      [href$='#ms-hide-client-area'],
+      .hide-client-area {
+        display: none !important;
+      }
+      [data-ms-content='client-area'],
+      [href$='#/ms/content/client-area'] {
+        display: none !important;
+      }
+      [ms-hide='undefined'],
+      [href$='#ms-hide-undefined'],
+      .hide-undefined {
+        display: none !important;
+      }
+      [data-ms-content='undefined'],
+      [href$='#/ms/content/undefined'] {
+        display: none !important;
+      }
+      [data-ms-membership='redirect'],
+      [href*='#/ms/membership/redirect'],
+      [data-ms-content='members'],
+      [href$='#/ms/content/members'],
+      [data-ms-modal='profile'],
+      [href*='#/ms/profile'],
+      [ms-profile],
+      [href='#ms-profile'] {
+        display: none !important;
+      }
+      [ms-logout],
+      [href='#ms-logout'],
+      [href*='#/ms/logout'] {
+        display: none !important;
+      }
+      [ms-member-page] {
+        display: none !important;
+      }
+    </style>
+
+    <!--REPLACE ↑↑-->
+
+    <!--Chart.js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <style type="text/css">
+      .btn-next,
+      .btn-prev {
+        position: absolute;
+        top: 30vh;
+        cursor: pointer;
+        color: #1875f0;
+        background: transparent;
+        font-size: 2rem;
+        border: none;
+      }
+
+      .slideStyles {
+        position: relative;
+        left: 100%;
+        transition: 0.5s ease-in-out;
+      }
+
+      /* Chart.js */
+      @keyframes chartjs-render-animation {
+        from {
+          opacity: 0.99;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .chartjs-render-monitor {
+        animation: chartjs-render-animation 1ms;
+      }
+      .chartjs-size-monitor,
+      .chartjs-size-monitor-expand,
+      .chartjs-size-monitor-shrink {
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+      }
+      .chartjs-size-monitor-expand > div {
+        position: absolute;
+        width: 1000000px;
+        height: 1000000px;
+        left: 0;
+        top: 0;
+      }
+      .chartjs-size-monitor-shrink > div {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body
+    data-new-gr-c-s-check-loaded="14.1058.0"
+    data-gr-ext-installed=""
+    style=""
+  >
+    <div class="page-wrapper">
+      <div class="top-nav wf-section">
+        <a href="#" class="logo-link w-nav-brand"
+          ><div>CLIENT&nbsp;DASHBOARD</div></a
+        >
+        <div
+          data-hover="true"
+          data-delay="100"
+          class="dropdown w-dropdown"
+          style=""
+        >
+          <div
+            class="navigation-item profile-nav w-dropdown-toggle"
+            id="w-dropdown-toggle-0"
+            aria-controls="w-dropdown-list-0"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            role="button"
+            tabindex="0"
+          >
+            <img
+              src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdcb4bdee894c72e7abfd0e_proifle.jpg"
+              alt=""
+              class="profile-pic"
+            />
+            <div>Hi, <span>there</span>!</div>
+          </div>
+          <nav
+            class="nav-dropdown-list w-dropdown-list"
+            id="w-dropdown-list-0"
+            aria-labelledby="w-dropdown-toggle-0"
+          >
+            <div class="webflow-diamond"></div>
+            <div class="nav-drop-list-padding">
+              <a
+                ms-profile="true"
+                href="#"
+                class="navigation-item dropdown-nav-item w-inline-block"
+                tabindex="0"
+                ><div class="navigation-icon"></div>
+                <div>Profile</div></a
+              ><a
+                href="#"
+                class="navigation-item dropdown-nav-item w-inline-block"
+                tabindex="0"
+                ><div class="navigation-icon"></div>
+                <div>Support</div></a
+              ><a
+                ms-logout="true"
+                href="#"
+                class="navigation-item logout-link w-inline-block"
+                tabindex="0"
+                ><div class="navigation-icon"></div>
+                <div>Log out</div></a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div
+        data-duration-in="300"
+        data-duration-out="100"
+        data-current="Overview"
+        data-easing="ease"
+        class="tabs w-tabs"
+      >
+        <div id="menuTabList" class="navigation-menu w-tab-menu" role="tablist">
+          <a
+            data-w-tab="Overview"
+            class="navigation-item w-inline-block w-tab-link w--current"
+            id="w-tabs-0-data-w-tab-0"
+            href="#w-tabs-0-data-w-pane-0"
+            role="tab"
+            aria-controls="w-tabs-0-data-w-pane-0"
+            aria-selected="false"
+            tabindex="-1"
+            ><div class="navigation-icon"></div>
+            <div>Overview</div></a
+          ><a
+            data-w-tab="Project"
+            class="navigation-item w-inline-block w-tab-link"
+            id="w-tabs-0-data-w-tab-1"
+            href="#w-tabs-0-data-w-pane-1"
+            role="tab"
+            aria-controls="w-tabs-0-data-w-pane-1"
+            aria-selected="false"
+            tabindex="-1"
+            ><div class="navigation-icon"></div>
+            <div>Project</div></a
+          ><a
+            data-w-tab="Documents"
+            class="navigation-item w-inline-block w-tab-link"
+            id="w-tabs-0-data-w-tab-2"
+            href="#w-tabs-0-data-w-pane-2"
+            role="tab"
+            aria-controls="w-tabs-0-data-w-pane-2"
+            aria-selected="false"
+            tabindex="-1"
+            ><div class="navigation-icon"></div>
+            <div>Documents</div></a
+          ><a
+            data-w-tab="Progress"
+            class="navigation-item w-inline-block w-tab-link"
+            id="w-tabs-0-data-w-tab-3"
+            href="#w-tabs-0-data-w-pane-3"
+            role="tab"
+            aria-controls="w-tabs-0-data-w-pane-3"
+            aria-selected="true"
+            ><div class="navigation-icon"></div>
+            <div>Progress</div></a
+          ><a
+            data-w-tab="Assets"
+            class="navigation-item w-inline-block w-tab-link"
+            id="w-tabs-0-data-w-tab-4"
+            href="#w-tabs-0-data-w-pane-4"
+            role="tab"
+            aria-controls="w-tabs-0-data-w-pane-4"
+            aria-selected="false"
+            tabindex="-1"
+            ><div class="navigation-icon"></div>
+            <div>Assets</div></a
+          ><a
+            data-w-tab="Apps"
+            class="navigation-item hide-on-mobile w-inline-block w-tab-link"
+            id="w-tabs-0-data-w-tab-5"
+            href="#w-tabs-0-data-w-pane-5"
+            role="tab"
+            aria-controls="w-tabs-0-data-w-pane-5"
+            aria-selected="false"
+            tabindex="-1"
+            ><div class="navigation-icon"></div>
+            <div>Apps</div></a
+          >
+        </div>
+        <div class="dash-tab-wrapper w-tab-content" style="position: relative">
+          <section id="customSlider">
+            <div
+              data-w-tab="Overview"
+              class="slideStyles dashboard-section w-tab-pane w--tab-active"
+              id="w-tabs-0-data-w-pane-0"
+              role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-0"
+              style="left: 0"
+            >
+              <div class="container">
+                <h3>Welcome back, <span>Matt</span>!</h3>
+                <div class="dash-row">
+                  <div class="white-box third">
+                    <div class="box-padding">
+                      <div class="colorful-icon green"></div>
+                      <h3 class="large-number">$<span>25,000</span></h3>
+                      <div>Starting budget</div>
+                    </div>
+                  </div>
+                  <div class="white-box third">
+                    <div class="box-padding">
+                      <div class="colorful-icon green"></div>
+                      <h3 class="large-number">
+                        $<span ms-data="spend">5,030</span>
+                      </h3>
+                      <div>Total spend</div>
+                    </div>
+                  </div>
+                  <div class="white-box third mobile-full-box">
+                    <div class="box-padding">
+                      <div class="colorful-icon purple"></div>
+                      <h3 class="large-number">21 June 2019</h3>
+                      <div>Target launch</div>
+                    </div>
+                  </div>
+                  <div class="white-box two-third">
+                    <div class="box-padding">
+                      <div class="w-embed w-script">
+                        <div class="chartjs-size-monitor">
+                          <div class="chartjs-size-monitor-expand">
+                            <div class=""></div>
+                          </div>
+                          <div class="chartjs-size-monitor-shrink">
+                            <div class=""></div>
+                          </div>
+                        </div>
+                        <canvas
+                          id="lineChart"
+                          width="385"
+                          height="192"
+                          style="display: block; width: 385px; height: 192px"
+                          class="chartjs-render-monitor"
+                        ></canvas>
+
+                        <script>
+                          var ctx = document
+                            .getElementById('lineChart')
+                            .getContext('2d');
+                          var chart = new Chart(ctx, {
+                            // The type of chart we want to create
+                            type: 'line',
+
+                            // The data for our dataset
+                            data: {
+                              labels: [
+                                'January - 1',
+                                'February',
+                                'March',
+                                'April',
+                                'May',
+                                'June',
+                                'July',
+                              ],
+                              datasets: [
+                                {
+                                  label: 'Random Chart',
+                                  backgroundColor: 'rgb(255, 99, 132, 0.5)',
+                                  borderColor: 'rgb(255, 99, 132, 0.5)',
+                                  data: [0, 10, 5, 2, 20, 10, 50],
+                                },
+                                {
+                                  label: 'Super Chart',
+                                  backgroundColor: 'rgb(255, 127, 80, 0.5)',
+                                  borderColor: 'rgb(255, 127, 80, 0.5)',
+                                  data: [0, 23, 6, 38, 20, 50, 10],
+                                },
+                              ],
+                            },
+
+                            // Configuration options go here
+                            options: {},
+                          });
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white-box third">
+                    <div class="box-padding">
+                      <div class="w-embed w-script">
+                        <div class="chartjs-size-monitor">
+                          <div class="chartjs-size-monitor-expand">
+                            <div class=""></div>
+                          </div>
+                          <div class="chartjs-size-monitor-shrink">
+                            <div class=""></div>
+                          </div>
+                        </div>
+                        <canvas
+                          id="myDonut"
+                          width="165"
+                          height="82"
+                          style="display: block; width: 165px; height: 82px"
+                          class="chartjs-render-monitor"
+                        ></canvas>
+
+                        <script>
+                          var data = {
+                            labels: ['Red', 'Blue', 'Yellow'],
+                            datasets: [
+                              {
+                                data: [45, 55],
+                                backgroundColor: ['#02c908', '#f6f9f9'],
+                                hoverBackgroundColor: ['#02c908', '#f6f9f9'],
+                                hoverBorderColor: ['#fff', '#fff'],
+                              },
+                            ],
+                          };
+
+                          var promisedDeliveryChart = new Chart(
+                            document.getElementById('myDonut'),
+                            {
+                              type: 'doughnut',
+                              data: data,
+                              options: {
+                                tooltips: false,
+                                responsive: true,
+                                legend: {
+                                  display: false,
+                                },
+                              },
+                            }
+                          );
+                        </script>
+                      </div>
+                      <div class="center-label">Random donut chart</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-w-tab="Project"
+              class="slideStyles dashboard-section w-tab-pane"
+              id="w-tabs-0-data-w-pane-1"
+              role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-1"
+              style=""
+            >
+              <div class="container">
+                <h3>Project Overview</h3>
+                <div class="project-grid">
+                  <div class="template-left">
+                    <div class="white-box full-width">
+                      <div class="box-padding">
+                        <h4>Hi <span ms-data="first-name">name</span>!</h4>
+                        <div class="project-message">
+                          To the right, you'll find a live preview of your site.
+                          Please take some time to look it over, and submit your
+                          thoughts via the chat. <br /><br />You can check in
+                          for updates at any time.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="template-right">
+                    <div class="iframe-wrapper">
+                      <div class="html-embed w-embed w-iframe">
+                        <iframe
+                          sandbox="allow-scripts allow-same-origin"
+                          src="https://membership-one.webflow.io"
+                          class="iframe"
+                        ></iframe>
+
+                        <style>
+                          iframe {
+                            width: 100%;
+                            height: 100%;
+                            border-width: 2px;
+                            border-style: inset;
+                            border-color: initial;
+                            border-image: initial;
+                            border: 0;
+                            transform-origin: 0 0;
+                            background-color: white;
+                            border: none;
+                          }
+
+                          * {
+                            box-sizing: border-box;
+                          }
+                        </style>
+                      </div>
+                      <div class="iframe hide"></div>
+                    </div>
+                    <div class="template-height"></div>
+                    <div class="control-bar">
+                      <div class="option-row center">
+                        <div
+                          data-w-id="0d2b60bc-973f-4da3-78d9-d721d4e8d079"
+                          class="option-svg desktop-login current"
+                        >
+                          <div class="w-embed">
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABdSURBVEhLYxg2wBuInwDxfyphkFleQAwHj4EYm0JK8CMghgOYILUAhnmjFqCDUQsIglELCIJhaAHNCztQ0UpNS0CGuwMxSQDdEKoDmlmAbjA6phhgMxQZD2vAwAAAf+ybquZAAroAAAAASUVORK5CYII="
+                            />
+                          </div>
+                        </div>
+                        <div
+                          data-w-id="0d2b60bc-973f-4da3-78d9-d721d4e8d07b"
+                          class="option-svg tablet"
+                        >
+                          <div class="w-embed">
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVEhL7ZRLCoAwDAV7DgW9/xH8XEvBleZBKElTN4lFFw4MWCIT3TT9fIaRXMiDPIOigdZAZlay9nJELMmUXx4FDTQzMv7UAtWRcTVwYjoyrgZOTAeHjW2yAOGOxXOU2wU9P0cxC3DYWTVwUl0gjWI6Mq4GTkxHxtXAiek0vypaXHYTmcHVOpPln3hEAy11Xf+8RUoXT9OVqyVJ0HcAAAAASUVORK5CYII="
+                            />
+                          </div>
+                        </div>
+                        <div
+                          data-w-id="0d2b60bc-973f-4da3-78d9-d721d4e8d07d"
+                          class="option-svg mobile"
+                        >
+                          <div class="w-embed">
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACCSURBVEhL7ZVBCoAwDAT7DgX9/xO0fkvBk2YhvZTUbEH0koEBIUnX26a/mMUsnuLliB3sTiLNJlqPPYkQGubPa3FDU45YevcjwCcCXCLAJQJcPguo3VVrBmmsYzw8qK0QGqtwSsCo3/W8q3BalXmo1mwRaVDgq8hUJ3aw21X6L5HSDf4enaOWtwHkAAAAAElFTkSuQmCC"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-drawer"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-w-tab="Documents"
+              class="slideStyles dashboard-section w-tab-pane"
+              id="w-tabs-0-data-w-pane-2"
+              role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-2"
+              style=""
+            >
+              <div class="container">
+                <h3 class="heading">Documents</h3>
+                <div class="dash-row">
+                  <a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cddab8bdd562655647e4534_Project%20proposal.pdf"
+                    class="white-box link-box paper-box w-inline-block"
+                    ><div class="box-padding paper-padding">
+                      <img
+                        src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda1b3ee894cec8cb027d0_1.svg"
+                        alt=""
+                        class="doc-image"
+                      />
+                      <h3 class="doc-heading">Proposal</h3>
+                      <div class="doc-description">
+                        This is brief description of the document. Click to
+                        download.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div>
+                    <img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdd9f1df79788f00d59e77d_paper.svg"
+                      alt=""
+                      class="paper" /></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cddab8bdd562655647e4534_Project%20proposal.pdf"
+                    class="white-box link-box paper-box w-inline-block"
+                    ><div class="box-padding paper-padding">
+                      <img
+                        src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda1b3f797883e2f59f9d2_2.svg"
+                        alt=""
+                        class="doc-image"
+                      />
+                      <h3 class="doc-heading">Terms</h3>
+                      <div class="doc-description">
+                        This is brief description of the document. Click to
+                        download.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div>
+                    <img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdd9f1df79788f00d59e77d_paper.svg"
+                      alt=""
+                      class="paper" /></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cddab8bdd562655647e4534_Project%20proposal.pdf"
+                    class="white-box link-box paper-box w-inline-block"
+                    ><div class="box-padding paper-padding">
+                      <img
+                        src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda1b3fcbd740d5d7d0945_3.svg"
+                        alt=""
+                        class="doc-image"
+                      />
+                      <h3 class="doc-heading">Budget</h3>
+                      <div class="doc-description">
+                        This is brief description of the document. Click to
+                        download.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div>
+                    <img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdd9f1df79788f00d59e77d_paper.svg"
+                      alt=""
+                      class="paper" /></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cddabeef7978856a25a23d5_Terms%20of%20use.docx"
+                    class="white-box link-box paper-box w-inline-block"
+                    ><div class="box-padding paper-padding">
+                      <img
+                        src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda1b3f797883e2f59f9d2_2.svg"
+                        alt=""
+                        class="doc-image"
+                      />
+                      <h3 class="doc-heading">Contract</h3>
+                      <div class="doc-description">
+                        This is brief description of the document. Click to
+                        download.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div>
+                    <img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdd9f1df79788f00d59e77d_paper.svg"
+                      alt=""
+                      class="paper" /></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cddabeef7978856a25a23d5_Terms%20of%20use.docx"
+                    class="white-box link-box paper-box w-inline-block"
+                    ><div class="box-padding paper-padding">
+                      <img
+                        src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda1b3fcbd740d5d7d0945_3.svg"
+                        alt=""
+                        class="doc-image"
+                      />
+                      <h3 class="doc-heading">Members<br /></h3>
+                      <div class="doc-description">
+                        This is brief description of the document. Click to
+                        download.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div>
+                    <img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdd9f1df79788f00d59e77d_paper.svg"
+                      alt=""
+                      class="paper"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              data-w-tab="Progress"
+              class="slideStyles dashboard-section w-tab-pane"
+              id="w-tabs-0-data-w-pane-3"
+              role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-3"
+              style=""
+            >
+              <div class="container">
+                <h3 class="heading">Timeline</h3>
+                <div class="dash-row">
+                  <a href="#" class="white-box progress-box w-inline-block"
+                    ><div class="box-padding">
+                      <div class="progress-wrapper">
+                        <div class="progress-text-row">
+                          <div class="progress-text-column">
+                            <div class="progress-icon"><div>1</div></div>
+                            <div>Research</div>
+                          </div>
+                          <div class="progress-text-column">
+                            <div class="progress-icon"><div>2</div></div>
+                            <div>Define</div>
+                          </div>
+                          <div class="progress-text-column">
+                            <div class="progress-icon"><div>3</div></div>
+                            <div>Ideate</div>
+                          </div>
+                          <div class="progress-text-column">
+                            <div class="progress-icon"><div>4</div></div>
+                            <div>Prototype</div>
+                          </div>
+                          <div class="progress-text-column">
+                            <div class="progress-icon"><div>5</div></div>
+                            <div>Test</div>
+                          </div>
+                        </div>
+                        <div class="progress-bar-wrap">
+                          <div class="progress-bar"></div>
+                        </div>
+                      </div></div
+                  ></a>
+                </div>
+              </div>
+              <div class="container">
+                <h3 class="heading">Testing</h3>
+                <div class="dash-row">
+                  <div class="white-box full-width">
+                    <div class="box-padding w-richtext">
+                      <h4>ETA: June 10th</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3 class="heading">Prototyping</h3>
+                <div class="dash-row">
+                  <div class="white-box full-width">
+                    <div class="box-padding w-richtext">
+                      <h4>ETA: May 10th</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3 class="heading">Ideation</h3>
+                <div class="dash-row">
+                  <div class="white-box full-width">
+                    <div class="box-padding w-richtext">
+                      <h4>ETA: April 25th</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3 class="heading">Definition</h3>
+                <div class="dash-row">
+                  <div class="white-box full-width">
+                    <div class="box-padding w-richtext">
+                      <h4>In Progress: March 15th</h4>
+                      <p>
+                        The rich text element allows you to create and format
+                        headings, paragraphs, blockquotes, images, and video all
+                        in one place instead of having to add and format them
+                        individually. Just double-click and easily create
+                        content.
+                      </p>
+                      <h5>Static and dynamic content editing</h5>
+                      <p>
+                        A rich text element can be used with static or dynamic
+                        content. For static content, just drop it into any page
+                        and begin editing. For dynamic content, add a rich text
+                        field to any collection and then connect a rich text
+                        element to that field in the settings panel. Voila!
+                      </p>
+                      <h5>How to customize formatting for each rich text</h5>
+                      <p>
+                        Headings, paragraphs, blockquotes, figures, images, and
+                        figure captions can all be styled after a class is added
+                        to the rich text element using the "When inside of"
+                        nested selector system.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3 class="heading">Research</h3>
+                <div class="dash-row">
+                  <div class="white-box full-width">
+                    <div class="box-padding w-richtext">
+                      <h4>What’s a Rich Text element?</h4>
+                      <p>
+                        The rich text element allows you to create and format
+                        headings, paragraphs, blockquotes, images, and video all
+                        in one place instead of having to add and format them
+                        individually. Just double-click and easily create
+                        content.
+                      </p>
+                      <h5>Static and dynamic content editing</h5>
+                      <p>
+                        A rich text element can be used with static or dynamic
+                        content. For static content, just drop it into any page
+                        and begin editing. For dynamic content, add a rich text
+                        field to any collection and then connect a rich text
+                        element to that field in the settings panel. Voila!
+                      </p>
+                      <h5>How to customize formatting for each rich text</h5>
+                      <p>
+                        Headings, paragraphs, blockquotes, figures, images, and
+                        figure captions can all be styled after a class is added
+                        to the rich text element using the "When inside of"
+                        nested selector system.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-w-tab="Assets"
+              class="slideStyles dashboard-section w-tab-pane"
+              id="w-tabs-0-data-w-pane-4"
+              role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-4"
+              style=""
+            >
+              <div class="container">
+                <h3 class="heading">Documents</h3>
+                <div class="dash-row masonry">
+                  <a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5a2ee894ce5cab03657_berries-bowl-delicious-1209605.jpg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5a2ee894ce5cab03657_berries-bowl-delicious-1209605.jpg"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 30vw"
+                      srcset="
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5a2ee894ce5cab03657_berries-bowl-delicious-1209605-p-1080.jpeg 1080w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5a2ee894ce5cab03657_berries-bowl-delicious-1209605.jpg         1280w
+                      "
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5e8e09fa51571773405_adult-beautiful-beauty-1054422.jpg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5e8e09fa51571773405_adult-beautiful-beauty-1054422.jpg"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 30vw"
+                      srcset="
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5e8e09fa51571773405_adult-beautiful-beauty-1054422-p-500.jpeg   500w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5e8e09fa51571773405_adult-beautiful-beauty-1054422-p-1080.jpeg 1080w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5e8e09fa51571773405_adult-beautiful-beauty-1054422.jpg         1280w
+                      "
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5ebdd56268f047e2902_beautiful-bloom-blooming-979932.jpg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5ebdd56268f047e2902_beautiful-bloom-blooming-979932.jpg"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 30vw"
+                      srcset="
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5ebdd56268f047e2902_beautiful-bloom-blooming-979932-p-1080.jpeg 1080w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5ebdd56268f047e2902_beautiful-bloom-blooming-979932.jpg         1280w
+                      "
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda654fcbd7455807d24f3_MZ-7AaQh_400x400.jpg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda654fcbd7455807d24f3_MZ-7AaQh_400x400.jpg"
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda66895678d619af743e8_adventure-asphalt-daylight-1955134%20(1).jpg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda66895678d619af743e8_adventure-asphalt-daylight-1955134%20(1).jpg"
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5f595678d59cbf7426f_coca-cola-machine-mobilechallenge-899786.jpg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5f595678d59cbf7426f_coca-cola-machine-mobilechallenge-899786.jpg"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 30vw"
+                      srcset="
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5f595678d59cbf7426f_coca-cola-machine-mobilechallenge-899786-p-500.jpeg   500w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5f595678d59cbf7426f_coca-cola-machine-mobilechallenge-899786-p-1080.jpeg 1080w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda5f595678d59cbf7426f_coca-cola-machine-mobilechallenge-899786.jpg         1280w
+                      "
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda63cdd562677497e29ae_pexels-photo-167699.jpeg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdb69c9ded4a067737c23a0_pexels-photo-539711%20(1).jpeg"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 30vw"
+                      srcset="
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdb69c9ded4a067737c23a0_pexels-photo-539711%2520(1)-p-500.jpeg   500w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdb69c9ded4a067737c23a0_pexels-photo-539711%2520(1)-p-800.jpeg   800w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdb69c9ded4a067737c23a0_pexels-photo-539711%2520(1)-p-1080.jpeg 1080w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdb69c9ded4a067737c23a0_pexels-photo-539711%20(1).jpeg          1280w
+                      "
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda63cdd562677497e29ae_pexels-photo-167699.jpeg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda63cdd562677497e29ae_pexels-photo-167699.jpeg"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 30vw"
+                      srcset="
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda63cdd562677497e29ae_pexels-photo-167699-p-1080.jpeg 1080w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda63cdd562677497e29ae_pexels-photo-167699.jpeg        1280w
+                      "
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  ><a
+                    href="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda665e09fa565a37735c6_bag-blurred-background-daylight-1353029%20(1).jpg"
+                    class="white-box link-box asset-box w-inline-block"
+                    ><img
+                      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda665e09fa565a37735c6_bag-blurred-background-daylight-1353029%20(1).jpg"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 30vw"
+                      srcset="
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda665e09fa565a37735c6_bag-blurred-background-daylight-1353029%20(1)-p-500.jpeg   500w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda665e09fa565a37735c6_bag-blurred-background-daylight-1353029%20(1)-p-800.jpeg   800w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda665e09fa565a37735c6_bag-blurred-background-daylight-1353029%20(1)-p-1080.jpeg 1080w,
+                        https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda665e09fa565a37735c6_bag-blurred-background-daylight-1353029%20(1).jpg         1280w
+                      "
+                      alt=""
+                    />
+                    <div class="box-padding">
+                      <h3 class="doc-heading">Asset.jpg</h3>
+                      <div class="doc-description">
+                        This is brief description.
+                      </div>
+                      <div class="doc-date">27 January 2019</div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-w-tab="Apps"
+              class="slideStyles dashboard-section w-tab-pane"
+              id="w-tabs-0-data-w-pane-5"
+              role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-5"
+              style=""
+            >
+              <div class="container">
+                <h3 class="heading">Analytics</h3>
+                <div class="dash-row">
+                  <a
+                    href="https://analytics.google.com"
+                    target="_blank"
+                    class="white-box link-box w-inline-block"
+                    ><div class="box-padding app-padding-box">
+                      <div class="app-logo-circle">
+                        <img
+                          src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdd7316fcbd7446f37bffea_google-analytics-3.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4 class="app-heading">Google Analytics</h4>
+                        <div class="app-heading connected">• Connected</div>
+                        <div>All-in-one site analytics</div>
+                      </div>
+                    </div></a
+                  ><a
+                    href="https://www.hotjar.com/"
+                    target="_blank"
+                    class="white-box link-box w-inline-block"
+                    ><div class="box-padding app-padding-box">
+                      <div class="app-logo-circle">
+                        <img
+                          src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cdda7adfcbd7420327d2c29_hotjar.svg"
+                          width="100"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4 class="app-heading">Hotjar</h4>
+                        <div class="app-heading connect">Connect</div>
+                        <div>The visual way to understand your users</div>
+                      </div>
+                    </div></a
+                  ><a
+                    href="https://heap.io/"
+                    target="_blank"
+                    class="white-box link-box w-inline-block"
+                    ><div class="box-padding app-padding-box">
+                      <div class="app-logo-circle">
+                        <img
+                          src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cde1242dd9cda597a4a56bb_heap.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4 class="app-heading">HEAP</h4>
+                        <div class="app-heading connect">Connect</div>
+                        <div>
+                          Automatically capture every interaction: clicks,
+                          submits, transactions, emails, and more.
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+              <div class="container">
+                <h3 class="heading">General</h3>
+                <div class="dash-row">
+                  <a
+                    href="https://crisp.chat/en/"
+                    target="_blank"
+                    class="white-box link-box w-inline-block"
+                    ><div class="box-padding app-padding-box">
+                      <div class="app-logo-circle">
+                        <img
+                          src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cde1332dd9cda24af4a5945_crisp.png"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4 class="app-heading">Crisp.chat</h4>
+                        <div class="app-heading connected">• Connected</div>
+                        <div>
+                          Cross-channel customer support experiences using
+                          modern messaging
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <button class="btn-prev" style="left: 5px">
+            <i class="fa fa-arrow-circle-left"></i>
+          </button>
+          <button class="btn-next" style="right: 5px">
+            <i class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="top-nav footer-nav wf-section">
+        <div class="contain">
+          <a href="#" class="logo-link w-nav-brand"
+            ><div>CLIENT&nbsp;DASHBOARD</div></a
+          >
+          <div class="copyright">Copyright 2019 ACME, Inc.</div>
+        </div>
+        <div class="footer-menu">
+          <a
+            href="https://webflow.com?rfsn=1495911.39ce0"
+            target="_blank"
+            class="navigation-item footer-nav-item w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cde0436e29039309b2cc797_5cbcc29efad96cf6f89a0d61_Webflow-round.svg"
+              alt=""
+              class="navigation-icon"
+            />
+            <div>Webflow</div></a
+          ><a
+            href="https://slack.com/"
+            target="_blank"
+            class="navigation-item footer-nav-item w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cddfc0edd9cda28724a28df_slack-new-logo.svg"
+              alt=""
+              class="navigation-icon"
+            />
+            <div>Slack Community</div></a
+          ><a
+            href="https://www.memberstack.io"
+            target="_blank"
+            class="navigation-item footer-nav-item w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/5cde0d600ae26e443bf648ca_Logo.svg"
+              alt=""
+              class="navigation-icon memberstack-logo"
+            />
+            <div>MemberStack</div></a
+          >
+        </div>
+        <div class="social-row">
+          <a href="#" class="social-link w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c90d43d1dc53de2e_Facebook.svg"
+              alt="" /></a
+          ><a href="#" class="social-link w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c6b14fc86a26b25f_Twitter.svg"
+              alt="" /></a
+          ><a href="#" class="social-link w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cd9dbe554fe38a1c05e6a9b/5cda1f47ec31a1854e1cf128_Youtube.svg"
+              alt="" /></a
+          ><a href="#" class="social-link w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cd9dbe554fe38a1c05e6a9b/5cda1fe7b775662acf936ca5_Dribbble.svg"
+              alt="" /></a
+          ><a href="#" class="social-link w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cd9dbe554fe38a1c05e6a9b/5cda21dec6b14f2e4826b7e3_Spotify.svg"
+              alt="" /></a
+          ><a href="#" class="social-link w-inline-block"
+            ><img
+              src="https://assets.website-files.com/5cd9dbe554fe38a1c05e6a9b/5cda1f4ac90d43b98853de4c_Behance.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="mobile-footer-spacing"></div>
+    </div>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5cdb69c9ded4a00da77c2385"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://assets.website-files.com/5cdb69c9ded4a00da77c2385/js/user-dashboard.7c32502fb.js"
+      type="text/javascript"
+    ></script>
+    <!--[if lte IE 9
+      ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
+    ><![endif]-->
+    <div memberstack-template="Client Dashboard Template"></div>
+
+    <!--Crisp + MemberStack-->
+    <script>
+      MemberStack.onReady.then(function (member) {
+        var email = member['email'];
+        var name = member['first-name'];
+
+        if (member.loggedIn) {
+          try {
+            $crisp.push(['set', 'user:email', [email]]);
+            $crisp.push(['set', 'user:nickname', [name]]);
+          } catch (e) {}
+        }
+      });
+    </script>
+    <div class="ms-style" style="position: relative; z-index: 2147483645">
+      <div id="ms-loader" class="ms-loader" style="display: none">
+        <div class="ms-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="w-embed">
+          <style>
+            .ms-loader {
+              position: fixed;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 1000000;
+              display: none;
+              padding-bottom: 5vh;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+            .ms-ellipsis {
+              display: inline-block;
+              position: relative;
+              width: 64px;
+              height: 64px;
+            }
+            .ms-ellipsis div {
+              position: absolute;
+              top: 27px;
+              width: 11px;
+              height: 11px;
+              border-radius: 50%;
+              background: #fff;
+              animation-timing-function: cubic-bezier(0, 1, 1, 0);
+            }
+            .ms-ellipsis div:nth-child(1) {
+              left: 6px;
+              animation: ms-ellipsis1 0.6s infinite;
+            }
+            .ms-ellipsis div:nth-child(2) {
+              left: 6px;
+              animation: ms-ellipsis2 0.6s infinite;
+            }
+            .ms-ellipsis div:nth-child(3) {
+              left: 26px;
+              animation: ms-ellipsis2 0.6s infinite;
+            }
+            .ms-ellipsis div:nth-child(4) {
+              left: 45px;
+              animation: ms-ellipsis3 0.6s infinite;
+            }
+            @keyframes ms-ellipsis1 {
+              0% {
+                transform: scale(0);
+              }
+              100% {
+                transform: scale(1);
+              }
+            }
+            @keyframes ms-ellipsis3 {
+              0% {
+                transform: scale(1);
+              }
+              100% {
+                transform: scale(0);
+              }
+            }
+            @keyframes ms-ellipsis2 {
+              0% {
+                transform: translate(0, 0);
+              }
+              100% {
+                transform: translate(19px, 0);
+              }
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        var x = 0;
+        const totalChilds = $('#customSlider').children().length;
+        const activeAllExcept = id => {
+          for (let i = 0; i < totalChilds; i++) {
+            if (i !== id) {
+              $('#customSlider').children().eq(i).removeClass('w--tab-active');
+              $('#menuTabList').children().eq(i).removeClass('w--current');
+              $('#customSlider').children().eq(i).css('left', '100%');
+            } else {
+              $('#customSlider').children().eq(i).addClass('w--tab-active');
+              $('#menuTabList').children().eq(i).addClass('w--current');
+            }
+          }
+        };
+
+        // for next slide
+        $('.btn-next').click(function () {
+          if (x < totalChilds - 1) {
+            x = x + 1;
+          } else {
+            x = 0;
+          }
+          activeAllExcept(x);
+          setTimeout(() => {
+            $('#customSlider').children().eq(x).css('left', 0);
+          }, 50);
+        });
+
+        // for prev slide
+        $('.btn-prev').click(function () {
+          if (x > 0) {
+            x = x - 1;
+          } else {
+            x = totalChilds - 1;
+          }
+          activeAllExcept(x);
+          $('#customSlider').children().eq(x).css('left', '-100%');
+          setTimeout(() => {
+            $('#customSlider').children().eq(x).css('left', 0);
+          }, 50);
+        });
+      });
+    </script>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>

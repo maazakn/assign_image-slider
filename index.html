@@ -1,0 +1,83 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous"
+/>
+
+<div id="slider">
+  <figure>
+    <img src="images/a.jpeg" />
+    <img src="images/b.jpeg" />
+    <img src="images/c.jpeg" />
+    <img src="images/d.jpeg" />
+    <img src="images/e.jpeg" />
+  </figure>
+
+  <button class="btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
+  <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
+</div>
+
+<script>
+  $(document).ready(function () {
+    var x = 0;
+    // for next slide
+    $('.btn-next').click(function () {
+      x = x <= 300 ? x + 100 : 0;
+      $('figure').css('left', -x + '%');
+    });
+
+    // for prev slide
+    $('.btn-prev').click(function () {
+      x = x >= 100 ? x - 100 : 400;
+      $('figure').css('left', -x + '%');
+    });
+  });
+</script>
+
+<style>
+  #slider {
+    width: 90%;
+    height: 600px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px 3px grey;
+    position: relative;
+  }
+
+  div#slider {
+    overflow: hidden;
+    border: 5px solid #3949ab;
+  }
+  div#slider figure img {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+  div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    transition: 1s ease-in-out;
+  }
+
+  .btn-next,
+  .btn-prev {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    color: white;
+    background: #3949ab;
+    padding: 20px;
+    font-size: 50px;
+    border: none;
+  }
+
+  .btn-prev {
+    left: 0px;
+  }
+  .btn-next {
+    right: 0px;
+  }
+</style>
